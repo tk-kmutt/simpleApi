@@ -20,7 +20,7 @@ type User struct {
 type UserPatch struct {
 	Code *string `json:"code"`
 	Name *string `json:"name"`
-	Age  *int    `json:"age"`
+	Age  *int    `json:"age" validate:"max=150"`
 }
 
 type CustomValidator struct {
